@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #eeeeee;
+  justify-content: center;
+}
+
+/* List item */
+.list-item {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0, 0.08) 0 0 0 1px ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.05);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 500px;
+  background-color: aqua;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0, 0.05) 0 6px 24px 0, rgba(0,0,0, 0.08) 0 0 0 1px ;
+}
