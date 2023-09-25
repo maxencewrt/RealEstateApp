@@ -91,31 +91,31 @@ const Sidebar = () => {
                         <li>
                             <Link to="/Properties" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <span className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">🏘️</span>
-                                <span class="flex-1 ml-3 whitespace-nowrap">Properties</span>
+                                <span class="flex-1 ml-3 whitespace-nowrap">Propriétés</span>
                             </Link>
                         </li>
                         <li>
                             <Link to="/Contracts" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                            <span className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">👪</span>
-                                <span class="flex-1 ml-3 whitespace-nowrap">Rental Agreement</span>
+                            <span className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">🫱🏻‍🫲🏽</span>
+                                <span class="flex-1 ml-3 whitespace-nowrap">Contrats de location</span>
                             </Link>
                         </li>
                         <li>
                             <Link to="/Bank" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <span className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">🏦</span>
-                                <span class="flex-1 ml-3 whitespace-nowrap">Bank documents</span>
+                                <span class="flex-1 ml-3 whitespace-nowrap">Documents bancaire</span>
                             </Link>
                         </li>
                         <li>
                             <Link to="/Travaux" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <span className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">👷‍♂️</span>
-                                <span class="flex-1 ml-3 whitespace-nowrap">Construction</span>
+                                <span class="flex-1 ml-3 whitespace-nowrap">Travaux</span>
                             </Link>
                         </li>
                         <li>
                             <Link to="/Attachements" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             <span className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">🗂️</span>
-                                <span class="flex-1 ml-3 whitespace-nowrap">Attachements</span>
+                                <span class="flex-1 ml-3 whitespace-nowrap">Documents</span>
                             </Link>
                         </li>
                     </ul>

@@ -17,7 +17,7 @@ CREATE TABLE users (
     user_role VARCHAR(255) CHECK (user_role IN ('default', 'pro', 'business'))
 );
 
-CREATE TABLE property (
+CREATE TABLE properties2 (
     id VARCHAR(255) PRIMARY KEY,
     title VARCHAR(50),
     tag VARCHAR(50),
@@ -30,5 +30,5 @@ CREATE TABLE property (
     cashflow VARCHAR(50),
     link_rental VARCHAR(50),
     link_bank VARCHAR(50),
-    link_travaux VARCHAR(50),
+    link_travaux VARCHAR(50)
 );

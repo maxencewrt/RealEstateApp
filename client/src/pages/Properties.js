@@ -1,8 +1,12 @@
 import React from 'react';
+import { useState } from "react"
 import { Button } from 'flowbite-react';
 import { PencilSquareIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/solid';
+import Modal from "../components/Modal"
 
-const Properties = () => {
+const Properties = ({ getData })  => {
+    const [showModal, setShowModal]  = useState(false)
+
     return (
         <div>
             <div class="flex mb-4 rounded bg-gray-50 dark:bg-gray-800">
@@ -11,7 +15,7 @@ const Properties = () => {
                         Properties
                     </h1>
                     <div class="flex space-x-4">
-                        <Button color="success" size="sm">
+                        <Button color="success" size="sm" onClick={() => setShowModal(true)}>
                             <PlusIcon className="mr-2 h-5 w-5" />
                             Add Propety
                         </Button>
@@ -156,6 +160,7 @@ const Properties = () => {
                     </p>
                 </div>
             </div>
+            {showModal && <Modal mode={'Create'} setShowModal={setShowModal} getData={getData}/>}
         </div>
     )
 }

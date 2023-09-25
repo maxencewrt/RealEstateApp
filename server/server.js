@@ -24,14 +24,27 @@ app.get('/properties/:userEmail', async (req, res) => {
     }
 })
 
-// create a new properties
+// // create a new properties
+// app.post('/properties', async (req, res) => {
+//     const { user_email, title, progress, date } = req.body
+//     console.log(user_email, title, progress, date)
+//     const id = uuidv4()
+//     try {
+//         const newProperty = await pool.query(`INSERT INTO properties(id, user_email, title, progress, date) VALUES($1, $2, $3, $4, $5);`,
+//             [id, user_email, title, progress, date])
+//         res.json(newProperty)
+//     } catch (err) {
+//         console.error(err)
+//     }
+// })
+
+// create a new properties2
 app.post('/properties', async (req, res) => {
-    const { user_email, title, progress, date } = req.body
-    console.log(user_email, title, progress, date)
+    const { title, tag, address, description, purchase_date, price, surface, price_m2, cashflow, link_rental, link_bank, link_travaux, user_email } = req.body
     const id = uuidv4()
     try {
-        const newProperty = await pool.query(`INSERT INTO properties(id, user_email, title, progress, date) VALUES($1, $2, $3, $4, $5);`,
-            [id, user_email, title, progress, date])
+        const newProperty = await pool.query(`INSERT INTO properties2(id, title, tag, address, description, purchase_date, price, surface, price_m2, cashflow, link_rental, link_bank, link_travaux, user_email) VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9 , $10, $11, $12, $13 ,$14);`,
+            [id, title, tag, address, description, purchase_date, price, surface, price_m2, cashflow, link_rental, link_bank, link_travaux, user_email])
         res.json(newProperty)
     } catch (err) {
         console.error(err)
